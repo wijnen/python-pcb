@@ -1,0 +1,14 @@
+Source: python-pcb
+Section: python
+Priority: optional
+Maintainer: Bas Wijnen <wijnen@debian.org>
+Build-Depends: debhelper (>= 9), python3-all, dh-python
+Standards-Version: 3.9.6
+
+Package: python3-pcb
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: generate pcb schematics from Python
+ This module is an alternative for KiCAD's eeschema, for people who prefer to
+ design their schematic in the form of a Python program.  It generates a
+ netlist and components file, which can be used with pcbnew.
